@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="173" id="KGk-i7-Jjw" customClass="AvatarTableViewCell" customModule="Final1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="172.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gY-XF-osc">
+                        <rect key="frame" x="86.5" y="132" width="147" height="30"/>
+                        <state key="normal" title="Change Profile Image"/>
+                        <connections>
+                            <action selector="changeAvaDidTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bJ1-K8-b3D"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DC5-vW-aa3">
+                        <rect key="frame" x="110" y="24" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="BtT-qE-d3Q"/>
+                            <constraint firstAttribute="height" constant="100" id="Srh-Ae-LmY"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="DC5-vW-aa3" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="0GT-7i-grE"/>
+                    <constraint firstItem="1gY-XF-osc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="1V5-Ew-8ty"/>
+                    <constraint firstItem="1gY-XF-osc" firstAttribute="top" secondItem="DC5-vW-aa3" secondAttribute="bottom" constant="8" id="4VD-Rk-G6u"/>
+                    <constraint firstItem="DC5-vW-aa3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="D5t-fM-Umk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="changeAva" destination="1gY-XF-osc" id="6Xk-lf-Eq9"/>
+                <outlet property="profileImage" destination="DC5-vW-aa3" id="snY-UU-gVc"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="88.058035714285708"/>
+        </tableViewCell>
+    </objects>
+</document>
